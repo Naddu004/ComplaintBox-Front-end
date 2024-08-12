@@ -1,0 +1,277 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  max-height: 1000px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  background: #ccd8be;
+  font: 16px/1.6 "Muli", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+.custom-navbar {
+  border: 2px solid #07080a;
+  border-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  margin-right: auto;
+  font-weight: bolder;
+}
+
+/* links evenly spaced */
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.nav-link {
+  flex-grow: 1;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: 600px;
+  vertical-align: top;
+}
+
+.custom-btn {
+  margin-right: 20px;
+  background-color: rgb(32, 27, 27);
+  border: 2px solid white;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* .custom-btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+} */
+
+/* .custom-btn.mb-5 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+} */
+
+.nav-link-hover {
+  transition: transform 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-link-hover:hover {
+  transform: scale(1.4);
+}
+
+.block {
+  text-align: center;
+}
+
+/* LodgeComplaint Code */
+
+.lodge-form {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form {
+  width: 600px;
+  height: 300px;
+  border-radius: 1.5rem;
+  background-color: #eeeeee;
+  padding: 0 30px;
+  display: grid;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}
+
+.otp-verify {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.btn1 {
+  padding: 10px;
+  background-color: #309e70;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+  font-weight: bolder;
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-size: 20px; */
+}
+
+.otp_verify {
+  display: none;
+}
+
+.h2-cls {
+  margin-top: 40px;
+}
+
+/* Category component */
+/* .container1 {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+
+.catsec1 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 0 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+  width: 100%;
+  background-color: #309e70;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+} */
+
+/* Category code */
+
+.container2 {
+  margin-top: 40px;
+  display: grid;
+  margin-left: 150px;
+  align-content: space-evenly;
+}
+
+.small-card {
+  width: 30rem;
+  padding: 10px;
+  height: 30rem;
+}
+
+.small-card img {
+  height: 30rem;
+  object-fit: cover;
+}
+
+.small-card .card-title {
+  font-size: 1.1rem;
+}
+
+.small-card .card-text {
+  font-size: 0.9rem;
+}
+
+.small-card .btn {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+/* Form CSS */
+.formmain {
+  border: 2px solid;
+  padding: 1rem;
+  border-radius: 10px;
+  padding-bottom: 10px;
+
+}
+
+.divform1 {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  height: auto;
+  /* background-color: #f8f9fa; */
+  /* Light grey background */
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.FormSec1 {
+  width: 60%;
+  /* align-items: center; */
+}
+
+.missing_comp {
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #6c757d;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.formselect1 {
+  margin-top: 10px;
+  background-color: #ffffff;
+  /* White background for form inputs */
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.btnform3 {
+  background-color: #343a40;
+  /* Dark background for buttons */
+  color: #ffffff;
+  /* White text */
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
